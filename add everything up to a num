@@ -1,0 +1,7 @@
+# iterate and add everything up to 5
+# 1+2+3+4+5 = 15
+def recursive_sum(x):
+        return x * (x + 1) / 2
+    
+print(recursive_sum(5))
+
