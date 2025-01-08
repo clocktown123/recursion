@@ -1,0 +1,10 @@
+# reverse a number
+# 123 should turn to 321
+
+def reverse_num(n):
+        if n == 0:
+                return 0
+        else:
+                return (n % 10) * 10 ** (len(str(n)) - 1) + reverse_num(n // 10)
+    
+print(reverse_num(123))
