@@ -1,0 +1,21 @@
+import math
+
+
+
+#def test(num):
+    #total = 0
+    #temp = 0
+    #while num > 1:
+        #temp = num % 10
+        #num = math.trunc(num / 10)
+        #total += temp
+    #print(total)
+    #return total
+
+
+def sum(num):
+    if num == 0:
+        return 0
+    return num%10 + sum(int(num / 10))
+
+print(sum(23332)) #13
